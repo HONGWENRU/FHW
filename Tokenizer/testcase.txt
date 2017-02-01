@@ -1,0 +1,23 @@
+[hf164@c211-i1 Documents]$ gcc -Wall -g -o tokenizer tokenizer.c
+[hf164@c211-i1 Documents]$ gcc tokenizer.c -o tokenizer
+[hf164@c211-i1 Documents]$ ./tokenizer
+0080     s   d   0x89   87655   98766e12         A   0077
+The input string is:0080     s   d   0x89   87655   98766e12         A   0077
+
+Decimal: '0080'
+Error: [0x73]
+Error: [0x64]
+Hex: '0x89'
+Decimal: '87655'
+Float: '98766e12'
+Error: [0x41]
+Octal: '0077'
+[hf164@c211-i1 Documents]$ ./tokenizer
+1.2     1.3   1.456
+The input string is:1.2     1.3   1.456
+
+Float: '1.2'
+Float: '1.3'
+Float: '1.456'
+[hf164@c211-i1 Documents]$ 
+
